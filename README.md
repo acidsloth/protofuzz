@@ -2,11 +2,11 @@
 Intruder like application for websockets with protocol buffers support<br/>
 <br/>
 Application is using modified websockets library https://github.com/mdymike/websockets, https://github.com/nccgroup/blackboxprotobuf and https://developers.google.com/protocol-buffers
-Created because no tools exist which can deal with protobuf over websockets and only working fuzzer I was able to find was based on kitty fuzzer and it was inconvinient to write definition.  
+Created because no tools exist which can deal with protobuf over websockets. Also working with pure websockets.  
 <br/>
 Prerequesites:<br/>
 -Linux, tested on debian 9 and 10<br/>
--Python ≥ 3.7 for whole application except modules/blackboxprotobuf must use python 2.7. Use pyenv. (On debian 10 just run protofuzz.py wiht with python3. Rest should work as python 2.7 is default) 
+-Python ≥ 3.7 for whole application except modules/blackboxprotobuf must use python 2.7. Use pyenv. (On debian 10 just run protofuzz.py wiht with python3. Rest should work as python 2.7 is default) <br/>
 -nano<br/>
 -you might need to go to modules/protobuf-3.11.4 and compile protobuf-3.11.4 (no need to install)<br/>
 -if you want to test wss:// on included websocket server you need to generate keys using script<br/><br/>
@@ -25,4 +25,5 @@ If application authentication is handled by websocket you might specify a prereq
 Limitations:<br/>
 -lib blackboxprotobuf sometimes fail to reencode certian payloads<br/> 
 -some payloads are reencoded differently<br/>
--Protobuf wordlist must not break json eg. quote should be \" etc<br/>
+-If -x is used wordlist must not break json eg. quote should be \" etc<br/>
+
