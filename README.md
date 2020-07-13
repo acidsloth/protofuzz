@@ -1,4 +1,4 @@
-# protofuzz
+# protofuzz aka trespasser
 Intruder like application for websockets with protocol buffers support<br/>
 <br/>
 Application is using modified websockets library https://github.com/mdymike/websockets, https://github.com/nccgroup/blackboxprotobuf and https://developers.google.com/protocol-buffers
