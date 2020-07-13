@@ -1,6 +1,25 @@
 # protofuzz aka trespasser
 Intruder like application for websockets with protocol buffers support<br/>
 <br/>
+```
+usage: protofuzz.py [-h] [-x] [-p P] wordlist URI inputfile
+protofuzz.py: error: the following arguments are required: wordlist, URI, inputfile
+root@debian-pentest:/opt/protofuzz# ./protofuzz.py -h
+usage: protofuzz.py [-h] [-x] [-p P] wordlist URI inputfile
+
+Websocket fuzzer with protobuff support. Requires Python ≥ 3.7 and python 2.7.
+See readme for details
+
+positional arguments:
+  wordlist    Wordlist to parse
+  URI         websocket URI
+  inputfile   Payload to send, will fuzz everything between "`" characters
+
+optional arguments:
+  -h, --help  show this help message and exit
+  -x          Payload is protobuf
+  -p P        Request to send before fuzzing
+```
 Application is using modified websockets library https://github.com/mdymike/websockets, https://github.com/nccgroup/blackboxprotobuf and https://developers.google.com/protocol-buffers
 Created because no tools exist which can deal with protobuf over websockets. Also working with pure websockets.  
 <br/>
