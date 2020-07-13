@@ -3,9 +3,6 @@ Intruder like application for websockets with protocol buffers support<br/>
 <br/>
 ```
 usage: protofuzz.py [-h] [-x] [-p P] wordlist URI inputfile
-protofuzz.py: error: the following arguments are required: wordlist, URI, inputfile
-root@debian-pentest:/opt/protofuzz# ./protofuzz.py -h
-usage: protofuzz.py [-h] [-x] [-p P] wordlist URI inputfile
 
 Websocket fuzzer with protobuff support. Requires Python ≥ 3.7 and python 2.7.
 See readme for details
