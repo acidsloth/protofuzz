@@ -17,7 +17,7 @@ optional arguments:
   -x          Payload is protobuf
   -p P        Request to send before fuzzing
 ```
-Application is using modified websockets library https://github.com/mdymike/websockets, https://github.com/nccgroup/blackboxprotobuf and https://developers.google.com/protocol-buffers
+Application is using modified websockets library https://github.com/mdymike/websockets,Blackbox protobuff libary from NCC https://github.com/nccgroup/blackboxprotobuf and google protocol buffers https://developers.google.com/protocol-buffers
 Created because no tools exist which can deal with protobuf over websockets. Also working with pure websockets.  
 <br/>
 Prerequesites:<br/>
